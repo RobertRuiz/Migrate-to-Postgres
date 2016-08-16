@@ -1,0 +1,27 @@
+<h1>Welcome to the Iron Slag <br> The Iron Yard's own Glossary of Front and Back End Engineering terms</h1>
+
+<h2>The most recent 5 terms added are:</h2>
+
+<ul>
+<% @terms.each do |term| %>
+  <li><a href="/terms/<%= term.id %>"><%= term.name %></a></li>
+<% end %>
+</ul>
+
+<a href="/terms">See a complete list of all current terms or </a>
+
+<p>
+<form action="/terms/search" method="post">
+  <input type="text" name="name" value="">
+  <input type="submit" value="  Search for a term">
+</form>
+</p>
+
+
+<h2>The current categories are:</h2>
+
+<% @categories.each do |category| %>
+  <li><a href="/categories/<%= :id %>"><%= category.name %></a></li>
+
+<% end %>
+</ul>

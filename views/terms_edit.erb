@@ -1,0 +1,10 @@
+<form action="/terms/<%= @term.id%>" method="post">
+  <input type="hidden" name="_method" value="put">
+  <div class="edit">
+    <label>Name <input type="text" name="term[name]" value="<%= @term.name %>"></label>
+    <label>Definition <input type="text" name="term[definition]" value="<%= @term.definition %>"></label>
+    <label>Author <input type="text" name="term[author]" value="<%= @term.author %>"></label>
+    <label> Web link <input type="text"name="term[web_link]" value="<%= @term.web_link %>"></label>
+  </div>
+  <p> <input type="submit" value="Update this term"> </p>
+</form>

@@ -1,0 +1,17 @@
+ul {
+  list-style: decimal;
+}
+
+li {
+  list-style: none;
+}
+
+footer {
+  margin-top: 100px;
+}
+
+.edit {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}

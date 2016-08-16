@@ -1,0 +1,14 @@
+<h2>The complete list of current categories is as follows:</h2>
+
+<ul>
+<% @categories.each do |category| %>
+  <li><a href="/categories/<%= category.id %>"><%= category.name %></a></li>
+<% end %>
+</ul>
+
+
+<ul>
+  <li><a href="/categories/new">Add a new category</a></li>
+  <li><a href="/terms">Back to the list of terms</a></li>
+  <li><a href="/">Back to the homepage</a></li>
+</ul>

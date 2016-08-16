@@ -1,0 +1,14 @@
+<h2>The complete list of current terms is as follows:</h2>
+
+<ul>
+<% @terms.each do |term| %>
+  <li><a href="/terms/<%= term.id %>"><%= term.name %></a></li>
+<% end %>
+</ul>
+
+
+<ul>
+  <li><a href="/terms/new">Add a new term</a></li>
+  <li><a href="/categories">Back to the list of categories</a></li>
+  <li><a href="/">Back to the homepage</a></li>
+</ul>
